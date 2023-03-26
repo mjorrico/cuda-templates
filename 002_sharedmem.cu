@@ -21,6 +21,7 @@ int main()
   cudaMallocManaged(&b, N * sizeof(float));
   cudaMallocManaged(&c, N * sizeof(float));
 
+  srand(time(NULL));
   for (std::size_t i = 0; i < N; i++)
   {
     a[i] = (float)rand() / RAND_MAX;

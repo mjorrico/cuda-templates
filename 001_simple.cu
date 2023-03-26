@@ -18,6 +18,8 @@ int main()
   float *h_a = new float[N];
   float *h_b = new float[N];
   float *h_c = new float[N];
+
+  srand(time(NULL));
   for (std::size_t i = 0; i < N; i++)
   {
     h_a[i] = (float)rand() / RAND_MAX;
