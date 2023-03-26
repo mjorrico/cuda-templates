@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cuda_runtime.h>
 #include <random>
 
 float *random_floats(std::size_t N)
